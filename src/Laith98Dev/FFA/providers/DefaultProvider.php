@@ -1,7 +1,7 @@
 <?php
 
 namespace Laith98Dev\FFA\providers;
-
+ 
 /*  
  *  A plugin for PocketMine-MP.
  *  
