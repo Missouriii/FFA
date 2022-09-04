@@ -86,22 +86,22 @@ class FFAGame
 		$index = [];
 		$title = $this->plugin->getConfig()->get("scoreboard-title", "FFA");
 
-		$index[] = TF::BOLD . TF::YELLOW . $title;
+		$index[] = TF::BOLD . TF::DARK_BLUE . $title;
 		$v = 0;
 		for ($i = 0; $i < strlen($title); $i++){
 			$final = "";
 			for($i_ = 0; $i_ < strlen($title); $i_++){
 				if($i_ == $v){
-					$final .= TF::BOLD . TF::WHITE . $title[$i_];
+					$final .= TF::BOLD . TF::BLUE . $title[$i_];
 				} else {
-					$final .= TF::BOLD . TF::YELLOW . $title[$i_];
+					$final .= TF::BOLD . TF::DARK_BLUE . $title[$i_];
 				}
 			}
 			$index[] = $final;
 			$v++;
 		}
 
-		$index[] = TF::BOLD . TF::WHITE . $title;
+		$index[] = TF::BOLD . TF::DARK_BLUE . $title;
 		$this->scoreboardsLines = $index;
 	}
 	
