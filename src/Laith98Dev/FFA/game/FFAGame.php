@@ -403,7 +403,7 @@ class FFAGame
 				$this->getPlugin()->getDeaths($player, function($deaths) use ($player, $kills): void{
 					$this->new($player, "ffa", $this->scoreboardsLines[$this->scoreboardsLine]);
 					$this->setLine($player, 1, " ");
-					$this->setLine($player, 2, "§5Blossom §l§d»§r Hub");
+					$this->setLine($player, 2, " §5Blossom §l§d»§r FFA");
 					$this->setLine($player, 3, "  ");
 					$this->setLine($player, 3, " §ePlayers: " . TF::RESET . count($this->getPlayers()) . "  ");
 					$this->setLine($player, 4, " §eMap: " . TF::RESET . $this->getName() . "  ");
